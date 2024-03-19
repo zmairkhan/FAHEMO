@@ -2,7 +2,7 @@
 # Time Succes decompile : 2024-02-07 00:26:14.084668
 from os import path
 import os,base64,zlib,pip,urllib
-os.system('xdg-open http://wa.me/+93770711587')
+os.system('xdg-open https://www.facebook.com/profile.php?id=100089881804754')
 print('\n\033[1;37m install modules...\n It will take some seconds...')
 import uuid
 import os,sys,time,json,random,re,string,platform,base64
